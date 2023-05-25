@@ -98,13 +98,13 @@ const ContactForm = () => {
 
       {submit && (
         <div className='fixed inset-0 flex items-center justify-center'>
-          <div className='absolute inset-0 bg0black opacity-50'></div>
-            <div className='bg-white relative rounded-lg p-8 z-10'>
-             <h2 className='text-2xl font0bold mb-4'>Thank You, {name}!</h2>
+            <div className='absolute inset-0 bg0black opacity-50'></div>
+            <div className='bg-white rounded-lg p-8'>
+                <h2 className='text-2xl font0bold mb-4'>Thank You, {name}!</h2>
                 <p>We appreciate your feedback.</p>
                 <button
                  className='mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
-                 onClick={closeModal}
+                    onClick={closeModal}
                 >
                     Close
                 </button>
